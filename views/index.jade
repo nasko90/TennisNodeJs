@@ -1,5 +1,85 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to Pesa Universe
+  .navbar-wrapper
+    .container-fluid
+        nav.navbar.navbar-fixed-top
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                span.sr-only Toggle navigation
+                |                     
+                span.icon-bar
+                |                     
+                span.icon-bar
+                |                     
+                span.icon-bar
+                                  
+             
+            |                 
+            #navbar.navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li.active
+                  a(href='#') Home
+                |                         
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | Results 
+                    span.caret
+                  |                             
+                  ul.dropdown-menu
+                    li.dropdown
+                      a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') View Departments
+                    |                                 
+                    li
+                      a(href='') Month by month
+                |                         
+                li
+                  a(href='/addNewGame') Add New Game
+                |                         
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | Players 
+                    span.caret
+                  |                             
+                  ul.dropdown-menu
+                    li
+                      a(href='#') View Managers
+                    |                                 
+                    li
+                      a(href='#') Add New
+                |                         
+                li
+                   a(href='/standings') Standings
+                  |                             
+                |                         
+                li.down
+                  a.dropdown-toggle.active(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | HR 
+                    span.caret
+                  |                             
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Change Time Entry
+                    |                                 
+                    li
+                      a(href='#') Report
+              |                     
+              ul.nav.navbar-nav.pull-right
+                li.dropdown
+                  a.dropdown-toggle.active(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | Signed in as  
+                    span.caret
+                  |                             
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Change Password
+                    |                                 
+                    li
+                      a(href='#') My Profile
+                |                         
+                li
+                  a(href='#') Logout
+
+
+

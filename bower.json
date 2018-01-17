@@ -1,0 +1,22 @@
+{
+  "name": "app.js",
+  "description": "site",
+  "main": "bower",
+  "authors": [
+    "adrenovichki <atanas.drenovichki@endava.com>"
+  ],
+  "license": "MIT",
+  "homepage": "index",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.8",
+    "jquery": "^3.2.1"
+  }
+}
